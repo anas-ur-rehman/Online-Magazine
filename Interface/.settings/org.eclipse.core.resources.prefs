@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/main/AdminLogin.java=UTF-8
+encoding//src/main/AdminLoginService.java=UTF-8
+encoding//src/main/AdminLoginServiceLocator.java=UTF-8
+encoding//src/main/AdminLoginSoapBindingStub.java=UTF-8
+encoding//src/main/Getpost.java=UTF-8
+encoding//src/main/GetpostService.java=UTF-8
+encoding//src/main/GetpostServiceLocator.java=UTF-8
+encoding//src/main/GetpostSoapBindingStub.java=UTF-8
+encoding//src/main/Search.java=UTF-8
+encoding//src/main/SearchService.java=UTF-8
+encoding//src/main/SearchServiceLocator.java=UTF-8
+encoding//src/main/SearchSoapBindingStub.java=UTF-8
+encoding//src/main_pkg/PostInsert.java=UTF-8
+encoding//src/main_pkg/PostInsertService.java=UTF-8
+encoding//src/main_pkg/PostInsertServiceLocator.java=UTF-8
+encoding//src/main_pkg/PostInsertSoapBindingStub.java=UTF-8
