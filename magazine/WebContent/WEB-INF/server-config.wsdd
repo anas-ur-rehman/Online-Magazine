@@ -68,10 +68,23 @@
   <ns1:parameter name="wsdlTargetNamespace" value="http://main"/>
   <ns1:parameter name="wsdlServiceElement" value="getpostService"/>
  </ns1:service>
+ <ns1:service name="SearchUsecase" provider="java:RPC" style="wrapped" use="literal">
+  <ns1:operation name="getdescription" qname="ns4:getdescription" returnQName="ns4:getdescriptionReturn" returnType="xsd:string" soapAction="" xmlns:ns4="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns4:searched" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="getdescription"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="SearchUsecase"/>
+  <ns1:parameter name="className" value="main.SearchUsecase"/>
+  <ns1:parameter name="wsdlServicePort" value="SearchUsecase"/>
+  <ns1:parameter name="schemaQualified" value="http://main"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://main"/>
+  <ns1:parameter name="wsdlServiceElement" value="SearchUsecaseService"/>
+ </ns1:service>
  <ns1:service name="Login" provider="java:RPC" style="wrapped" use="literal">
-  <ns1:operation name="login_info" qname="ns4:login_info" returnQName="ns4:login_infoReturn" returnType="xsd:string" soapAction="" xmlns:ns4="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-   <ns1:parameter qname="ns4:name" type="xsd:string"/>
-   <ns1:parameter qname="ns4:password" type="xsd:string"/>
+  <ns1:operation name="login_info" qname="ns5:login_info" returnQName="ns5:login_infoReturn" returnType="xsd:string" soapAction="" xmlns:ns5="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns5:name" type="xsd:string"/>
+   <ns1:parameter qname="ns5:password" type="xsd:string"/>
   </ns1:operation>
   <ns1:parameter name="allowedMethods" value="login_info"/>
   <ns1:parameter name="wsdlPortType" value="Login"/>
@@ -83,10 +96,10 @@
   <ns1:parameter name="wsdlServiceElement" value="LoginService"/>
  </ns1:service>
  <ns1:service name="Insert" provider="java:RPC" style="wrapped" use="literal">
-  <ns1:operation name="insertPost" qname="ns5:insertPost" returnQName="ns5:insertPostReturn" returnType="xsd:string" soapAction="" xmlns:ns5="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-   <ns1:parameter qname="ns5:category" type="xsd:string"/>
-   <ns1:parameter qname="ns5:imageUrl" type="xsd:base64Binary"/>
-   <ns1:parameter qname="ns5:article" type="xsd:string"/>
+  <ns1:operation name="insertPost" qname="ns6:insertPost" returnQName="ns6:insertPostReturn" returnType="xsd:string" soapAction="" xmlns:ns6="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns6:category" type="xsd:string"/>
+   <ns1:parameter qname="ns6:imageUrl" type="xsd:base64Binary"/>
+   <ns1:parameter qname="ns6:article" type="xsd:string"/>
   </ns1:operation>
   <ns1:parameter name="allowedMethods" value="insertPost"/>
   <ns1:parameter name="wsdlPortType" value="Insert"/>
@@ -98,8 +111,8 @@
   <ns1:parameter name="wsdlServiceElement" value="InsertService"/>
  </ns1:service>
  <ns1:service name="Webservice" provider="java:RPC" style="wrapped" use="literal">
-  <ns1:operation name="main" qname="ns6:main" soapAction="" xmlns:ns6="http://main">
-   <ns1:parameter qname="ns6:args" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="main" qname="ns7:main" soapAction="" xmlns:ns7="http://main">
+   <ns1:parameter qname="ns7:args" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </ns1:operation>
   <ns1:parameter name="allowedMethods" value="main"/>
   <ns1:parameter name="wsdlPortType" value="Webservice"/>
@@ -111,8 +124,8 @@
   <ns1:parameter name="wsdlServiceElement" value="WebserviceService"/>
  </ns1:service>
  <ns1:service name="UserSearch" provider="java:RPC" style="wrapped" use="literal">
-  <ns1:operation name="search" qname="ns7:Search" soapAction="" xmlns:ns7="http://main">
-   <ns1:parameter qname="ns7:cat" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="search" qname="ns8:Search" soapAction="" xmlns:ns8="http://main">
+   <ns1:parameter qname="ns8:cat" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </ns1:operation>
   <ns1:parameter name="allowedMethods" value="search"/>
   <ns1:parameter name="typeMappingVersion" value="1.2"/>
@@ -124,23 +137,23 @@
   <ns1:parameter name="wsdlServiceElement" value="UserSearchService"/>
  </ns1:service>
  <ns1:service name="updatePost" provider="java:RPC" style="wrapped" use="literal">
-  <ns1:operation name="main" qname="ns8:main" soapAction="" xmlns:ns8="http://main">
-   <ns1:parameter qname="ns8:ID" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
-   <ns1:parameter qname="ns8:category" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
-   <ns1:parameter qname="ns8:title" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
-   <ns1:parameter qname="ns8:date" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
-   <ns1:parameter qname="ns8:description" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
-   <ns1:parameter qname="ns8:imageURL" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="main" qname="ns9:main" soapAction="" xmlns:ns9="http://main">
+   <ns1:parameter qname="ns9:ID" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+   <ns1:parameter qname="ns9:category" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+   <ns1:parameter qname="ns9:description" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </ns1:operation>
-  <ns1:operation name="getid" qname="ns9:getid" returnQName="ns9:getidReturn" returnType="xsd:int" soapAction="" xmlns:ns9="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-   <ns1:parameter qname="ns9:des" type="xsd:string"/>
+  <ns1:operation name="getid" qname="ns10:getid" returnQName="ns10:getidReturn" returnType="xsd:int" soapAction="" xmlns:ns10="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns10:des" type="xsd:string"/>
   </ns1:operation>
   <ns1:parameter name="allowedMethods" value="main getid"/>
+  <ns1:parameter name="wsdlPortType" value="updatePost"/>
   <ns1:parameter name="typeMappingVersion" value="1.2"/>
   <ns1:parameter name="wsdlPortType" value="updatePost"/>
   <ns1:parameter name="className" value="main.updatePost"/>
   <ns1:parameter name="wsdlServicePort" value="updatePost"/>
   <ns1:parameter name="schemaQualified" value="http://main"/>
+  <ns1:parameter name="wsdlServicePort" value="updatePost"/>
+  <ns1:parameter name="className" value="main.updatePost"/>
   <ns1:parameter name="wsdlTargetNamespace" value="http://main"/>
   <ns1:parameter name="wsdlServiceElement" value="updatePostService"/>
  </ns1:service>
@@ -149,8 +162,8 @@
   <ns1:parameter name="className" value="org.apache.axis.Version"/>
  </ns1:service>
  <ns1:service name="Search" provider="java:RPC" style="wrapped" use="literal">
-  <ns1:operation name="searchPostsByCategory" qname="ns10:searchPostsByCategory" returnQName="ns10:searchPostsByCategoryReturn" returnType="xsd:string" soapAction="" xmlns:ns10="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-   <ns1:parameter qname="ns10:category" type="xsd:string"/>
+  <ns1:operation name="searchPostsByCategory" qname="ns11:searchPostsByCategory" returnQName="ns11:searchPostsByCategoryReturn" returnType="xsd:string" soapAction="" xmlns:ns11="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns11:category" type="xsd:string"/>
   </ns1:operation>
   <ns1:parameter name="allowedMethods" value="searchPostsByCategory"/>
   <ns1:parameter name="wsdlPortType" value="Search"/>
@@ -162,9 +175,9 @@
   <ns1:parameter name="wsdlServiceElement" value="SearchService"/>
  </ns1:service>
  <ns1:service name="AdminLogin" provider="java:RPC" style="wrapped" use="literal">
-  <ns1:operation name="login" qname="ns11:login" returnQName="ns11:loginReturn" returnType="xsd:boolean" soapAction="" xmlns:ns11="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-   <ns1:parameter qname="ns11:name" type="xsd:string"/>
-   <ns1:parameter qname="ns11:password" type="xsd:string"/>
+  <ns1:operation name="login" qname="ns12:login" returnQName="ns12:loginReturn" returnType="xsd:boolean" soapAction="" xmlns:ns12="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns12:name" type="xsd:string"/>
+   <ns1:parameter qname="ns12:password" type="xsd:string"/>
   </ns1:operation>
   <ns1:parameter name="sendMultiRefs" value="false"/>
   <ns1:parameter name="wsdlServicePort" value="AdminLogin"/>
@@ -178,8 +191,8 @@
   <ns1:parameter name="sendXsiTypes" value="false"/>
  </ns1:service>
  <ns1:service name="ExampleInsert" provider="java:RPC" style="wrapped" use="literal">
-  <ns1:operation name="insertReview" qname="ns12:insertReview" soapAction="" xmlns:ns12="http://main">
-   <ns1:parameter qname="ns12:comment" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="insertReview" qname="ns13:insertReview" soapAction="" xmlns:ns13="http://main">
+   <ns1:parameter qname="ns13:comment" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </ns1:operation>
   <ns1:parameter name="allowedMethods" value="insertReview"/>
   <ns1:parameter name="typeMappingVersion" value="1.2"/>

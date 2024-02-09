@@ -24,6 +24,13 @@
 	</form>
 	</div>
 	
+	<div>
+		<form action="search.jsp">
+			<input type="text" name="searched">
+			<button type="submit">search</button>
+		</form>
+	</div>
+	
 	<div id ="dailyItem" >
 		<%
 			Getpost post = new GetpostProxy().getGetpost();

@@ -19,7 +19,7 @@ if (result) {
 } else {
     String errorMessage = "Invalid username or password. Please try again."; 
     request.setAttribute("errorMessage", errorMessage);
-    RequestDispatcher dispatcher = request.getRequestDispatcher("AdminLoginPage.jsp"); 
+    RequestDispatcher dispatcher = request.getRequestDispatcher("AdminLoginPage .jsp"); 
     dispatcher.forward(request, response);
 }
 %>
