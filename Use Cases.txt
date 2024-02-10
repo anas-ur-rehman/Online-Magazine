@@ -1,0 +1,7 @@
+This is our use case file 
+
+1. An admin can add or delete a post.
+
+2. A user can search a cetegory 
+
+3. Admin can login
